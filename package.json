@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "unit": "mocha --recursive --require babel-core/register"
+    "unit": "mocha --recursive --require babel-core/register",
+    "dev": "webpack-dev-server --hot --inline -d"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -11,6 +12,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   }
 }

@@ -1,0 +1,19 @@
+<html>
+<body>
+</body>
+  <textarea id="input">
+  </textarea>
+  <div id="result">
+  </div>
+  <script src="http://localhost:8080/markdown-parser.js"></script>
+  <script>
+    const parse = MarkdownParser.default;
+    const inputElement = document.getElementById('input');
+    const resultElement = document.getElementById('result');
+    inputElement.addEventListener('input', () => {
+      const value = inputElement.value;
+      const parsed = parse(value);
+      resultElement.innerHTML = JSON.stringify(parsed, null, 2);
+    });
+  </script>
+</html>

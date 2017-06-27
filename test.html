@@ -13,6 +13,7 @@
     inputElement.addEventListener('input', () => {
       const value = inputElement.value;
       const parsed = parse(value);
+      console.log(parsed);
       resultElement.innerHTML = JSON.stringify(parsed, null, 2);
     });
   </script>

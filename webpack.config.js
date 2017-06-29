@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: ['./lib/parse.js'],
+    app: ['./lib/index.js'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
